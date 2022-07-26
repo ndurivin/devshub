@@ -11,14 +11,14 @@ function App() {
 
     <Router>
       <div className="App">
-        <Navbar /> <br/>
-        <Devcard />
+        <Navbar /><br/>
     </div>
     <Routes>
       <Route exact path='/' element={<Home/>}></Route>
       <Route exact path='/about' element={<About/>}></Route>
       <Route exact path='/search' element={<Search/>}></Route>
       <Route exact path='/admin' element={<Admin/>}></Route>
+      <Route exact path='/devcard' element={<Devcard/>}></Route>
     </Routes>
     </Router>
     
