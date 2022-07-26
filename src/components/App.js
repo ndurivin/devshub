@@ -1,4 +1,5 @@
 import { BrowserRouter as Router } from 'react-router-dom'
+import Devcard from './Devcard';
 import Navbar from './Navbar';
 
 function App() {
@@ -6,7 +7,8 @@ function App() {
 
     <Router>
       <div className="App">
-        <Navbar />
+        <Navbar /> <br/>
+        <Devcard />
     </div>
     </Router>
     
