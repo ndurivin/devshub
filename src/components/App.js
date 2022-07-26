@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Devcard from './Devcard';
+import DevCard from './DevCard';
 import Navbar from './Navbar';
 import Home from './Home';
 import About from './About';
@@ -18,7 +18,7 @@ function App() {
       <Route exact path='/about' element={<About/>}></Route>
       <Route exact path='/search' element={<Search/>}></Route>
       <Route exact path='/admin' element={<Admin/>}></Route>
-      <Route exact path='/devcard' element={<Devcard/>}></Route>
+      <Route exact path='/devcard' element={<DevCard/>}></Route>
     </Routes>
     </Router>
     
