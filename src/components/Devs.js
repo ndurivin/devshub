@@ -1,11 +1,30 @@
-// import React, { useEffect, useState }from 'react'
+import React, { useEffect, useState }from 'react'
 import DevCard from './DevCard'; 
+
+
+const devsUrl = 'https://quiet-hamlet-90428.herokuapp.com/devs';
 
 function Devs() {
 
+    const [devs, setDevs] = useState([]);
+
+    const getDev = () => {
+        fetch(devsUrl)
+            .then((res) => res.json())
+            .then((devs) => { 
+                setDevs (devs) 
+        })
+    }
+
+    useEffect(
+        getDev, []
+    )
+
+  let devCards = devs.map((dev) => (<DevCard devName="" devId="" devPic=""/>))
+
   return (
     <div className='container'>
-        <DevCard devName="Pjhyett" devId="4" devPic="https://avatars.githubusercontent.com/u/8957173?v=4" />
+        {devCards}
     </div>
    
   )
