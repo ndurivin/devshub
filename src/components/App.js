@@ -5,6 +5,7 @@ import Home from './Home';
 import About from './About';
 import Search from './Search';
 import Admin from './Admin';
+import Profile from './Profile';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Route exact path='/search' element={<Search/>}></Route>
       <Route exact path='/admin' element={<Admin/>}></Route>
       <Route exact path='/devcard' element={<DevCard/>}></Route>
+      <Route exact path='/profile' element={<Profile/>}></Route>
     </Routes>
     </Router>
     
