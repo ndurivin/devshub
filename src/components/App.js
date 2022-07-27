@@ -6,6 +6,7 @@ import About from './About';
 import Search from './Search';
 import Admin from './Admin';
 import Profile from './Profile';
+import Devs from './Devs';
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
       <Route exact path='/about' element={<About/>}></Route>
       <Route exact path='/search' element={<Search/>}></Route>
       <Route exact path='/admin' element={<Admin/>}></Route>
-      <Route exact path='/devcard' element={<DevCard/>}></Route>
+      <Route exact path='/devs' element={<Devs/>}></Route>
       <Route exact path='/profile' element={<Profile/>}></Route>
     </Routes>
     </Router>
