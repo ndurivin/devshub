@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom'
 
 function Navbar() {
   return (
-    <div className='container'>
+
+    <div >
       <nav className="navbar navbar-expand-lg bg-primary">
         <div className="container-fluid">
           <Link to="/" className="navbar-brand">Devshub</Link>
@@ -28,7 +29,7 @@ function Navbar() {
             </ul>
             <form className="d-flex" role="search">
               <input className="form-control me-2" type="search" placeholder="Search by technology stack" aria-label="Search"/>
-              <button className="btn btn-outline-success" type="submit">Search </button>
+              <button className="btn btn-outline-alert" type="submit">Search </button>
             </form>
           </div>
         </div>
