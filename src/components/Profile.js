@@ -1,10 +1,12 @@
 import React from 'react'
 import Devs from './Devs';
+import DevCard from './DevCard';
 
 function Profile({devName, devId, devPic}) {
   return (
     
     <div className='container'>
+      <h2 className="text-center">User Profile</h2>
         <div className="card mb-3" style={{maxWidth: 540 + 'px'}}>
             <div className="row g-0">
                 <div className="col-md-4">

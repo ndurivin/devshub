@@ -27,12 +27,11 @@ function Devs() {
 
   return (
     <div className="container">
+        <h1 className="text-center">Available Developers</h1>
       <div className="col">
-        <div className="card-body">
-          <h1 className="text-center">Available Developers</h1>
           {devCards}
         </div>
-      </div>
+        {/* </div> */}
     </div>
   );
 }
