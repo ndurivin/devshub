@@ -19,8 +19,6 @@ function DevCard({devName, devId, devPic}) {
           </div>
         </div>
         </div>
-
-        
       </div>
     </div>
   )

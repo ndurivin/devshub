@@ -4,7 +4,7 @@ function Home() {
   return (
       
     <div className='container'>
-        <h1>Welcome to Devshub.</h1> <br/>
+        <h1 className="text-center">Welcome to DevsHub.</h1> <br/>
 
     </div>
   )

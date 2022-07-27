@@ -1,6 +1,7 @@
 import React from 'react'
+import Devs from './Devs';
 
-function Profile() {
+function Profile({devName, devId, devPic}) {
   return (
     
     <div className='container'>
