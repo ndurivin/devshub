@@ -1,10 +1,10 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Profile from './Profile';
 
 
-const url = '';
+const url = 'https://quiet-hamlet-90428.herokuapp.com/devs';
 
 function DevCard({devName, devId, devPicture}) {
   
