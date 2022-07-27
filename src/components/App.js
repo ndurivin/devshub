@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import DevCard from './DevCard';
 import Navbar from './Navbar';
 import Home from './Home';
 import About from './About';

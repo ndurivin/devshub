@@ -1,11 +1,13 @@
-import React from 'react'
-import DevCard from './DevCard';    
+// import React, { useEffect, useState }from 'react'
+import DevCard from './DevCard'; 
 
 function Devs() {
+
   return (
     <div className='container'>
-        <DevCard devName="" devPic="" devId=""/>
+        <DevCard devName="Pjhyett" devId="4" devPic="https://avatars.githubusercontent.com/u/8957173?v=4" />
     </div>
+   
   )
 }
 
