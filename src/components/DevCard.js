@@ -8,20 +8,15 @@ const url = 'https://quiet-hamlet-90428.herokuapp.com/devs';
 
 function DevCard({devName, devId, devPicture}) {
   
-const [devs, setDevs] = useState([])
+const [devs, setDevs] = useState([]);
 
-const devFetch = () =>{
+useEffect(() => {
   fetch(url)
   .then((res) => res.json())
-  .then((data) => {
-    setDevs (data.devs)
-  })
-}
+  .then((devs) => setDevs(devs));
+}, [])
 
-useEffect(
-  devFetch, []
-)
-
+console.log(devs)
 
   return (
       
@@ -31,7 +26,7 @@ useEffect(
           <div className="card h-100">
             <img src={devPicture} className="card-img-top" alt={devName}/>
             <div className="card-body">
-              <h5 className="card-title">{devName}</h5>
+              <h5 className="card-title">{devs.name}</h5>
               <Link to="/profile" element={<Profile/>} className="btn btn-info" >View Full Profile</Link>
             </div>
           </div>
