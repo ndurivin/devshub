@@ -28,7 +28,7 @@ function Devs() {
 
   return (
     <div className="container">
-        {/* <Search /> */}
+        <Search />
         <br/>
         <h1 className="text-center">Available Developers</h1>
        <center>

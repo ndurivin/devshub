@@ -19,9 +19,9 @@ function Search() {
       <div className='py-4 container'>
       <div className="row cols-3 justify-content-center">
         <div className="col-11 col md-6 col-lg-3 mx-0 mb-4">
-        <div className="card h-100 shadow">
+        {/* <div className="card h-100 shadow"> */}
             {/* {detailCards} */}
-        </div>
+        {/* </div> */}
         </div>
       </div>
     </div>
