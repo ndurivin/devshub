@@ -1,28 +1,27 @@
 import React from 'react'
 import Devs from './Devs';
 import DevCard from './DevCard';
+import { Link } from 'react-router-dom';
 
-function Profile({devName, devId, devPic}) {
+function Profile({devName, devId, devPic, devStack, devExpertise, devFollows, devFollowing}) {
   return (
     
-    <div className='container'>
-      <h2 className="text-center">User Profile</h2>
-        <div className="card mb-3" style={{maxWidth: 540 + 'px'}}>
-            <div className="row g-0">
-                <div className="col-md-4">
-              <img src="" className="img-fluid rounded-start" alt=""/>
-                </div>
-                <div className="col-md-8">
-                <div className="card-body">
-                    <h5 className="card-title">""</h5>
-                    <h5 className="card-title">""</h5>
-                    <p className="card-text">{}</p>
-                    <p className="card-text"><small className="text-muted">""</small></p>
-                </div>
-                </div>
-            </div>
+    <div className='py-4 container'>
+      <div className="row cols-3 justify-content-center">
+        <div className="col-11 col md-6 col-lg-3 mx-0 mb-4">
+        <div className="card h-100 shadow">
+          <img src={devPic} className="card-img-top img-fluid" alt={devName}/>
+          <div className="card-body justify-content-center">
+            <h4 className="card-title">{devId}</h4>
+            <h5 className="card-title">{devName}</h5>
+            <h5 className="card-title">{devStack}</h5>
+            <h5 className="card-title">{devExpertise}</h5>
+            <h5 className="card-title">{devFollows}</h5>
+            <h5 className="card-title">{devFollowing}</h5>
+          </div>
         </div>
-      
+        </div>
+      </div>
     </div>
   )
 }
