@@ -28,9 +28,9 @@ function Devs() {
 
   return (
     <div className="container">
-        <Search />
+        {/* <Search /> */}
         <br/>
-        <h1 className="text-center">Available Developers</h1>
+        <h1 className="text-center">View All Developers</h1>
        <center>
       <div className="col">
           {devCards}

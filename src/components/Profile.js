@@ -1,30 +1,22 @@
 import React from 'react'
-import Devs from './Devs';
-import DevCard from './DevCard';
-import { Link } from 'react-router-dom';
 
-
-
-function Profile({devName, devId, devPic, devStack, devExpertise, devFollows, devFollowing}) {
-
-  const profile = <div className="card-body justify-content-center">
-      <img src={devPic} className="card-img-top img-fluid" alt={devName}/>
-          <div className="card-body justify-content-center">
-            <h4 className="card-title">{devId}</h4>
-            <h5 className="card-title">{devName}</h5>
-            <h5 className="card-title">{devStack}</h5>
-            <h5 className="card-title">{devExpertise}</h5>
-            <h5 className="card-title">{devFollows}</h5>
-            <h5 className="card-title">{devFollowing}</h5>
-          </div>
-          </div>
+function Profile() {
   return (
-    
+
     <div className='py-4 container'>
+      <div className='py-4 container'>
       <div className="row cols-3 justify-content-center">
         <div className="col-11 col md-6 col-lg-3 mx-0 mb-4">
         <div className="card h-100 shadow">
-          {profile}
+        <img src={dev1.image} className="card-img-top img-fluid" alt={dev1.name}/>
+          <div className="card-body justify-content-center">
+            <h4 className="card-title">ID: {dev1.id}</h4>
+            <h5 className="card-title">Name: {dev1.name}</h5>
+            <h5 className="card-title">Tech Stack: {dev1.language_id}</h5>
+            <h5 className="card-title">Experience: {dev1.experience}</h5>
+            <h5 className="card-title">Github Followers: {dev1.followers}</h5>
+          </div>
+          </div>
         </div>
         </div>
       </div>
