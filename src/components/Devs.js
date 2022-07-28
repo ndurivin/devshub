@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import DevCard from "./DevCard";
+import Search from "./Search";
 
 const devsUrl = "https://quiet-hamlet-90428.herokuapp.com/devs";
 
@@ -27,6 +28,8 @@ function Devs() {
 
   return (
     <div className="container">
+        <Search />
+        <br/>
         <h1 className="text-center">Available Developers</h1>
        <center>
       <div className="col">
