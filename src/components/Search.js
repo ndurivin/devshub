@@ -6,7 +6,7 @@ const api_Url = "https://quiet-hamlet-90428.herokuapp.com/devs";
 function Search() {
 
   const seachDevs = async (name) => {
-    const res = await fetch(`${api_Url}&s=${name}`)
+    const res = await fetch(`${api_Url}`)
     const data = await res.json();
   }
 useEffect(() => {
