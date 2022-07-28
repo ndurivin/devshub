@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 function Navbar() {
   return (
 
-    <div >
+    <div className='container'>
       <nav className="navbar navbar-expand-lg bg-primary">
         <div className="container-fluid">
           <Link to="/" className="navbar-brand">DevsHub</Link>
@@ -25,8 +25,7 @@ function Navbar() {
               </li>
             </ul>
             <form className="d-flex" role="search">
-              <input className="form-control me-2" type="search" placeholder="Search by technology stack" aria-label="Search"/>
-              <button className="btn btn-outline-alert" type="submit">Search </button>
+              <Link to="/search" className="nav-link">Search</Link>
             </form>
           </div>
         </div>
